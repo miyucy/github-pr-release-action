@@ -1,0 +1,19 @@
+name: "github-pr-release-action"
+description: "Run github-pr-release"
+inputs:
+  token:
+    description: "token"
+  owner:
+    description: "owner"
+  repo:
+    description: "repo"
+  head:
+    description: "head(develop)"
+  base:
+    description: "base(master)"
+outputs:
+  url:
+    description: "Created/Updated Pull Request URL"
+runs:
+  using: "node12"
+  main: "dist/index.js"
