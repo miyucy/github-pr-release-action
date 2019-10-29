@@ -1,5 +1,8 @@
 name: "github-pr-release-action"
 description: "Run github-pr-release"
+branding:
+  icon: 'git-branch' 
+  color: 'blue'
 inputs:
   token:
     description: "token"
